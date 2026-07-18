@@ -1,0 +1,24 @@
+[project]
+name = "tradingtutor"
+version = "0.1.0"
+description = "TradeTutor — web platform to learn trading strategies with real-time crypto charts and a LangGraph tutor agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain-openai>=0.2.0",
+    "langchain-core>=0.3.0",
+    "pandas>=2.0.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "ddgs>=6.0.0",
+    "streamlit>=1.59.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
